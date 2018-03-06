@@ -3,14 +3,15 @@
 //import {movie} from 'index.js';
 export let movie = {};
 //import $ from "jquery";
-export function addtocollection(data) {
+export function addtocollection() {
 
     movie = {};
-    movie.title = data.title;
-    movie.vote = data.vote_average;
-    movie.release = data.release_date;
+    movie.title = title;
+    movie.vote = vote_average;
+    movie.release = release_date;
     movie.img = "https://image.tmdb.org/t/p/w300" + data.poster_path;
     //moviesArray.push(movie);
+    console.log(movie);
 
     /*var Movies = `<div class="row">`;
 
