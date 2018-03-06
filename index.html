@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>THE MOVIE BUFF</title>
+    <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body data-spy="scroll" data-target=".nav" data-offset="50">
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">THE MOVIE BUFF</a>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href="#search">SEARCH</a></li>
+                <li class="tab"><a href="#myCollection">MY COLLECTIONS</a></li>
+            </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <div id="upcoming" class="col s12"></div>
+    </div>
+    <div id="search" class="col s12">
+        <br>
+        <br>
+        <div class="container">
+            <nav>
+                <div class="nav-wrapper" id="searchbar">
+                    <div class="input-field">
+                        <input id="inputbar" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                        <div class="container center-align">
+                            <button id="searchbutton" class="btn center-align waves-effect waves-light" type="submit" name="action">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div id="displaysearch"></div>
+    </div>
+    <div class="container">
+        <div id="myCollection" class="col s12"></div>
+    </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Add To My Collections</h4>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons">add</i>
+                    <input placeholder="Create New Collection" id="newCollection" type="text" class="validate">
+                    <label for="newCollection"></label>
+                    <button id="createbutton" class="btn center-align waves-effect waves-light" type="submit" name="action">Create</button>
+                </div>
+            </div>
+            <div class="collection">
+                <ul id="variousCollections">
+                </ul>
+            </div>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <<!-- script src="src/getMovie.js"></script>
+            <script src="src/addtocollection.js"></script> -->
+            <script src="./src/modal.js"></script>
+            
+            <!-- <script src="src/collectioncreation.js"></script>
+            <script src="src/addMoviesToCollection.js"></script> -->
+</body>
+
+</html>
